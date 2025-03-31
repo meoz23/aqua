@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Fish extends StatefulWidget {
   final Color color;
@@ -45,7 +46,7 @@ class _FishState extends State<Fish> with SingleTickerProviderStateMixin {
     return Positioned(
       left: _animation.value.dx * 250,
       top: _animation.value.dy * 250,
-      child: Icon(Icons.fish, color: widget.color, size: 30),
+      child: FaIcon(FontAwesomeIcons.fish, color: widget.color, size: 30),
     );
   }
 }
